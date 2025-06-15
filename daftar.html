@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+      <!--=============== CSS ===============-->
+      <style>
+        /*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  color: hsl(0, 0%, 100%);
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LOGIN ===============*/
+.login {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.login__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container {
+  position: relative;
+  background-color: hsla(0, 0%, 10%, 0.1);
+  border: 2px solid white;
+  margin-inline: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.login__title {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  margin-top: px;
+}
+
+.login__content,
+.login__box {
+  display: flex;
+}
+
+.login__content {
+  row-gap: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.login__box {
+  grid-template-columns: max-content 3fr;
+  text-align: center;
+  column-gap: 0.75rem;
+  border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+
+.login__icon,
+.login__eye {
+  font-size: 1.25rem;
+}
+
+.login__input {
+  width: 100%;
+  padding-block: 0.8rem;
+  background: none;
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  z-index: 1;
+}
+
+.login__box-input {
+  position: relative;
+}
+
+.login__label {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  font-weight: 500;
+  transition: top 0.3s, font-size 0.3s;
+}
+
+.login__eye {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.login__box:nth-child(2) input {
+  padding-right: 1.8rem;
+}
+
+.login__check,
+.login__check-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login__check {
+  margin-bottom: 1.5rem;
+}
+
+.login__check-label,
+.login__forgot,
+.login__register {
+  font-size: 0.813rem;
+}
+
+.login__check-group {
+  column-gap: 0.5rem;
+}
+
+.login__check-input {
+  width: 16px;
+  height: 16px;
+}
+
+.login__forgot {
+  color: hsl(0, 0%, 100%);
+}
+
+.login__forgot:hover {
+  text-decoration: underline;
+}
+
+.login__button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.login__register {
+  text-align: center;
+}
+
+.login__register a {
+  color: hsl(0, 0%, 100%);
+  font-weight: 500;
+}
+
+.login__register a:hover {
+  text-decoration: underline;
+}
+
+/* Input focus move up label */
+.login__input:focus + .login__label {
+  top: -12px;
+  font-size: 0.813rem;
+}
+
+/* Input focus sticky top label */
+.login__input:not(:placeholder-shown).login__input:not(:focus) + .login__label {
+  top: -12px;
+  font-size: 0.813rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .login {
+    justify-content: center;
+  }
+
+  .container {
+    width: 400px;
+    padding: 4rem 3rem 3.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .login__title {
+    font-size: 2rem;
+  }
+}
+.infoapk {
+    text-align: center;
+    margin-bottom: 150px;
+}
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+h1 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.textdaftar {
+    color: black;
+    margin-bottom: 50px;
+}
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+      <title>Daftar Sekarang</title>
+   </head>
+   <body>
+      <div class="login">
+         <img src="https://png.pngtree.com/background/20250102/original/pngtree-yellow-green-islamic-background-vector-picture-image_15826995.jpg" class="login__img">
+         
+
+         <form id="loginForm" class="container">
+            <h1 class="login__title">Daftar Sekarang</h1>
+             <div class="footer-section">
+                <div class="infoapk">
+                    <div class="textdaftar">
+                        Pendaftaran akun belum bisa dilakukan.
+                        Jika anda ingin membuat akun baru silahkan hubungi Developer.
+                    </div>
+      
+      <a href="https://wa.me/6282217502205" target="_blank" class="whatsapp-button">
+  <i class="fab fa-whatsapp"></i> Hubungi Developer
+</a>
+</div>
+    </div>
+
+           
+
+            
+      </div>
+      <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    const users = {
+        'Admin': { password: 'admin123', link: 'https://docs.google.com/forms/d/e/1FAIpQLSeJNCQj8UjEZVelI0TSb4r-6np_NE1iDujK9aJ0KaAJJnUUeA/viewform' },
+        'hafizatunnafisah': { password: 'hfzatunn0321', link: 'https://edisamsuar.github.io/aksesadminhfz' },
+        'nurulalfalah': { password: 'nrlalfalah3561', link: 'https://edisamsuar.github.io/aksesadminnrl' },
+        'ujian': { password: 'bbs', link: 'https://edisamsuar.github.io/ujiankelasbbs' },
+        'user5': { password: 'pass5', link: 'https://link5.com' }
+    };
+
+    if (users[username] && users[username].password === password) {
+        window.location.href = users[username].link;
+    } else {
+        alert('Username atau password salah! Cube Ketik Ulang segermi');
+    }
+});
+      </script>
+   </body>
+</html>
